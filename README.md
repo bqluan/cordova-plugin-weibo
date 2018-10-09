@@ -1,5 +1,5 @@
 # cordova-plugin-weibo
 
 ```
-cordova plugin add ~/go/src/github.com/bqluan/cordova-plugin-weibo --variable APP_KEY=655909933
+cordova plugin add https://github.com/bqluan/cordova-plugin-weibo.git --variable APP_KEY=<YOUR_APP_KEY>
 ```
