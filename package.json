@@ -1,0 +1,21 @@
+{
+  "name": "cordova-plugin-weibo",
+  "version": "1.0.0",
+  "description": "Cordova Weibo Plugin",
+  "cordova": {
+    "id": "cordova-plugin-weibo",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bqluan/cordova-plugin-weibo.git"
+  },
+  "keywords": [
+    "cordova",
+    "weibo"
+  ],
+  "author": "Ethan Luan",
+  "license": "MIT"
+}

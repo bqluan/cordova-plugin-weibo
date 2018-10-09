@@ -1,0 +1,8 @@
+repositories {
+    jcenter()
+    maven { url "https://dl.bintray.com/thelasterstar/maven/" }
+}
+
+dependencies {
+    compile 'com.sina.weibo.sdk:core:4.3.0:openDefaultRelease@aar'
+}
