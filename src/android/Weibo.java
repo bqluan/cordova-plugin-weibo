@@ -23,7 +23,7 @@ import org.json.JSONObject;
 public class Weibo extends CordovaPlugin implements WbShareCallback {
     public static final String TAG = "Weibo";
 
-    private static final String APP_KEY = "APP_KEY";
+    private static final String WEIBO_APP_KEY = "WEIBO_APP_KEY";
     private static final String REDIRECT_URL = "REDIRECT_URL";
     private static final String DEFAULT_REDIRECT_URL = "https://api.weibo.com/oauth2/default.html";
     private static final String SCOPE = "email,direct_messages_read,direct_messages_write,"
@@ -41,7 +41,7 @@ public class Weibo extends CordovaPlugin implements WbShareCallback {
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
 
-        appKey = webView.getPreferences().getString(APP_KEY, "");
+        appKey = webView.getPreferences().getString(WEIBO_APP_KEY, "");
         redirectUrl = webView.getPreferences().getString(REDIRECT_URL, DEFAULT_REDIRECT_URL);
         WbSdk.install(cordova.getActivity(), new AuthInfo(cordova.getActivity(), appKey, redirectUrl, SCOPE));
     }
