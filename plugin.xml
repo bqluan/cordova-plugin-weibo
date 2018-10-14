@@ -81,6 +81,10 @@
             </array>
         </config-file>
 
+        <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
+            <string>在进行分享时，这个APP需要读取您的照片库</string>
+        </config-file>
+
         <header-file src="src/ios/CDVWeibo.h"/>
         <source-file src="src/ios/CDVWeibo.m"/>
 
